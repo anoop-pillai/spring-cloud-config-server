@@ -10,5 +10,9 @@ spring:
           uri: https://github.com/anoop-pillai/configurations.git
           password: ${PAT}
           username: anoop-pillai
-greeting:
-  value: hello there
+          clone-on-start: true
+          default-label: master
+  security:
+    user:
+      name: ${USERNAME}
+      password: ${PASSWORD}
